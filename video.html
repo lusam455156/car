@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+	body{
+		margin: 0;
+		background-image: url("https://p2.bahamut.com.tw/B/2KU/16/33824a2de4ec19a03613cd9d26183wc5.JPG?v=1585106147416");
+
+	}
+
+	.container{
+		width: 95vw;
+		height: 60vw;
+		
+		display: grid;
+
+		grid-template-columns: 1fr 2fr 2fr ;
+		grid-template-rows: 100px 1fr 1fr 100px;
+		grid-gap: 10px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.container div{
+		border-width: 2px;
+		border-style: solid;
+		color: blue;
+		padding: 5px;
+
+	}
+ 
+	.header{
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+
+	.big-content{
+		grid-column-start: 1;
+		grid-column-end: span 2;
+
+		grid-row-start: 2;
+		grid-row-end: span 2;
+	}
+
+	.footer{
+
+		grid-column: 1/span 3;
+	}
+
+	h1{
+		font-size: 30px;
+		text-align: center;
+		color: white;
+		 background-color:black ;
+		margin-bottom:15px ;
+		padding: 15px;
+	}
+
+	  a{
+     	font-size: 22px;
+     	color:white ;
+ 
+	}
+
+	  a.nav{
+	  	 background-color:black ;
+		margin-bottom:10px ;
+		padding: 10px;
+	  }
+	  
+	a.nav:hover{
+		background-color: white;
+
+	}
+
+
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header"><h1>影片展示</h1></div>
+		<div class="big-content"><iframe width="700" height="520" src="https://www.youtube.com/embed/GS8MJ64XHYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="small-cpntent"><img src="https://i.ytimg.com/vi/Dsonvz7lslc/hqdefault.jpg"  width=430px height=300px ></div>
+		<div class="small-content"><img src="https://i.imgur.com/BSnWkRO.jpg"  width=430px height=200px ></div>
+		<div class="footer">
+		<a class=nav href="front%20page.html">首頁</a>			
+		<a class=nav href="indext.html">自我介紹</a>
+		<a class=nav href="car.html">車款展示</a>
+	</div>
+		
+	</div>
+
+
+
+</body>
+</html>
